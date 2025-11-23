@@ -6,7 +6,7 @@ if (!process.env.API_KEY) {
   console.warn("API_KEY environment variable not set. Using a placeholder. Please provide a valid API key for the app to function.");
 }
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || "AIzaSyBPrFF5CPn7DTIRsnNdTa__3p_FryiI8n0" });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || "" });
 
 const responseSchema: any = {
   type: Type.OBJECT,
